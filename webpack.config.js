@@ -49,12 +49,12 @@ module.exports = {
       loader: 'babel-loader?presets[]=react',
       include: path.resolve('src'),
     },{
-      test: /\.scss$/,
+      test: /\.css$/,
       loader: 'style-loader!css-loader!sass-loader',
       include: path.resolve('src'),
     },{
-      test: /\.html$/,
-      loader: 'file-loader?name=[name].html',
+      test: /\.htm$/,
+      loader: 'file-loader?name=[name].htm',
       include: path.resolve('src'),
     },{
       loader: 'file-loader?name=[path][name].[ext]',
